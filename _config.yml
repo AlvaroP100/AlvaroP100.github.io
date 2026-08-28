@@ -1,0 +1,33 @@
+title: "Alvaro"
+description: "The personal website and project portfolio of Alvaro, a developer building Scooly."
+url: "https://alvarop100.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Europe/Berlin"
+
+indexing: true
+
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - outputs
+  - work

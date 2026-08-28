@@ -1,0 +1,60 @@
+---
+title: Home
+description_key: home_description
+image: "/assets/images/workspace-hero.jpg"
+image_alt: "A developer workspace with a laptop, notebook, keyboard, and cobalt glass object"
+---
+<section class="hero container">
+  <div class="hero-copy">
+    <p class="role-label">{{ site.data.profile.headline }}</p>
+    <h1>{{ site.data.profile.name }}</h1>
+    <p class="hero-intro">{{ site.data.profile.intro }}</p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ '/projects/' | relative_url }}">View projects</a>
+      <a class="text-link" href="{{ '/about/' | relative_url }}">About me</a>
+    </div>
+  </div>
+  <figure class="hero-media">
+    <img src="{{ '/assets/images/workspace-hero.jpg' | relative_url }}" alt="A developer workspace with a laptop, notebook, keyboard, and cobalt glass object" width="1600" height="1200" fetchpriority="high">
+  </figure>
+</section>
+
+<section class="section container" aria-labelledby="selected-projects-title">
+  <div class="section-heading">
+    <h2 id="selected-projects-title">Selected projects</h2>
+    <p>Products, experiments, and the thinking behind them.</p>
+  </div>
+  <div class="project-list">
+    {% if site.projects.size > 0 %}
+      {% for project in site.projects limit: 2 %}
+        <article class="project-row">
+          <a class="project-image-link" href="{{ project.url | relative_url }}" aria-label="Read about {{ project.title }}">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt }}" width="1500" height="1000" loading="lazy">
+          </a>
+          <div class="project-summary">
+            {% if project.is_template %}<p class="template-flag">Template</p>{% endif %}
+            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+            <p>{{ project.subtitle }}</p>
+            <span class="project-meta">{{ project.role }} / {{ project.year }}</span>
+          </div>
+        </article>
+      {% endfor %}
+    {% else %}
+      <div class="empty-state">
+        <h3>No projects published yet</h3>
+        <p>Add a Markdown file to the <code>_projects</code> folder to publish the first one.</p>
+      </div>
+    {% endif %}
+  </div>
+  <a class="text-link section-link" href="{{ '/projects/' | relative_url }}">All projects</a>
+</section>
+
+<section class="about-band">
+  <div class="container about-band-inner">
+    <div>
+      <h2>Clear work, clearly explained.</h2>
+      <p>{{ site.data.profile.bio }}</p>
+    </div>
+    <a class="button secondary" href="{{ '/about/' | relative_url }}">Read my story</a>
+  </div>
+</section>

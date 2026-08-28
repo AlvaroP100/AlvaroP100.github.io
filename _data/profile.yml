@@ -1,0 +1,16 @@
+name: "Alvaro"
+given_name: "Alvaro"
+short_name: "AP"
+headline: "Developer building Scooly"
+intro: "I build practical software for learning and document the decisions behind it."
+description: "Alvaro is a developer building Scooly, Scooly Notes, and the systems that support them."
+home_description: "The personal website and selected projects of Alvaro, a developer building Scooly."
+about_description: "Learn how Alvaro builds Scooly and related software for learning, note-taking, and reliable operations."
+projects_description: "Explore software projects built by Alvaro, including the problem, process, current limits, and next steps."
+bio: "I build Scooly, an AI learning assistant, alongside a native iPad notes app and the independent systems that keep the product understandable and reliable."
+email: ""
+default_image: "/assets/images/workspace-hero.jpg"
+
+socials:
+  - name: "GitHub"
+    url: "https://github.com/AlvaroP100"

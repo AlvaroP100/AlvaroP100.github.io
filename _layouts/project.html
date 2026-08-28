@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <header class="container project-hero">
+    <a class="back-link" href="{{ '/projects/' | relative_url }}">Back to projects</a>
+    {% if page.is_template %}<p class="template-flag">Project page template</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="project-subtitle">{{ page.subtitle }}</p>
+    <dl class="project-facts">
+      <div>
+        <dt>Role</dt>
+        <dd>{{ page.role }}</dd>
+      </div>
+      <div>
+        <dt>Status</dt>
+        <dd>{{ page.status }}</dd>
+      </div>
+      <div>
+        <dt>Year</dt>
+        <dd>{{ page.year }}</dd>
+      </div>
+    </dl>
+  </header>
+
+  {% if page.image %}
+    <figure class="container project-cover">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" width="1500" height="1000">
+    </figure>
+  {% endif %}
+
+  <div class="container project-body-grid">
+    <aside class="project-sidebar" aria-label="Project links and technologies">
+      {% if page.stack %}
+        <div>
+          <h2>Built with</h2>
+          <ul class="tag-list">
+            {% for item in page.stack %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      {% if page.project_url or page.repository_url %}
+        <div class="project-actions">
+          {% if page.project_url %}<a class="button primary" href="{{ page.project_url }}">Visit project</a>{% endif %}
+          {% if page.repository_url %}<a class="button secondary" href="{{ page.repository_url }}">View code</a>{% endif %}
+        </div>
+      {% endif %}
+    </aside>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
+

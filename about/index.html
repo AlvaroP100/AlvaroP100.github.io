@@ -1,0 +1,36 @@
+---
+title: About
+description_key: about_description
+image: "/assets/images/project-process.jpg"
+image_alt: "Hands sketching a software interface in a grid notebook"
+---
+<article class="container page-shell">
+  <header class="page-intro">
+    <p class="role-label">About</p>
+    <h1>I build useful software and explain the work.</h1>
+    <p>{{ site.data.profile.bio }}</p>
+  </header>
+
+  <figure class="wide-media">
+    <img src="{{ '/assets/images/project-process.jpg' | relative_url }}" alt="Hands sketching a software interface in a grid notebook" width="1500" height="1000">
+  </figure>
+
+  <div class="about-grid">
+    <section>
+      <h2>What I work on</h2>
+      <p>My current work centers on Scooly, an AI learning assistant, and Scooly Notes, a native iPad app that connects handwritten class notes to the learning experience.</p>
+    </section>
+    <section>
+      <h2>How I work</h2>
+      <p>I explain product and architecture decisions, document current limits, and treat authentication, privacy, accessibility, and reliability as part of the product.</p>
+    </section>
+    <section>
+      <h2>Where to find me</h2>
+      <div class="profile-directory">
+        {% for social in site.data.profile.socials %}
+          <a href="{{ social.url }}" rel="me noopener" target="_blank">{{ social.name }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</article>
