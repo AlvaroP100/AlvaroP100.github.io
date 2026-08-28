@@ -214,6 +214,16 @@ a {
   line-height: 1.55;
 }
 
+.identity-alias {
+  margin: 1.15rem 0 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.identity-alias strong {
+  color: var(--text);
+}
+
 .hero-actions {
   display: flex;
   align-items: center;
@@ -478,6 +488,16 @@ a {
   max-width: 48rem;
   margin: 1.75rem 0 0;
   font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.project-byline {
+  margin: 1rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+.project-byline a {
+  font-weight: 700;
 }
 
 .project-facts {
@@ -768,4 +788,3 @@ a {
     background: var(--surface);
   }
 }
-

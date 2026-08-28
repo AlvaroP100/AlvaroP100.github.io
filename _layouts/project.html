@@ -7,6 +7,7 @@ layout: default
     {% if page.is_template %}<p class="template-flag">Project page template</p>{% endif %}
     <h1>{{ page.title }}</h1>
     <p class="project-subtitle">{{ page.subtitle }}</p>
+    <p class="project-byline">A project by <a href="{{ '/' | relative_url }}">{{ site.data.profile.name }} ({{ site.data.profile.alternate_name }})</a></p>
     <dl class="project-facts">
       <div>
         <dt>Role</dt>
@@ -51,4 +52,3 @@ layout: default
     </div>
   </div>
 </article>
-

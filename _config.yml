@@ -1,5 +1,5 @@
-title: "Alvaro"
-description: "The personal website and project portfolio of Alvaro, a developer building Scooly."
+title: "Alvaro Petro / Alvaro P100"
+description: "The personal website and project portfolio of Alvaro Petro, also known online as Alvaro P100."
 url: "https://alvarop100.github.io"
 baseurl: ""
 lang: "en"
@@ -29,5 +29,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - SEO_CHECKLIST.md
   - outputs
   - work
