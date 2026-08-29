@@ -1,7 +1,7 @@
 ---
 title: "Scooly"
 subtitle: "An AI learning assistant that explains homework step by step and adapts to each student's school context."
-description: "Scooly is an AI learning assistant built by Alvaro Petro (Alvaro P100). It explains homework, adapts to school context, and supports images, mathematics, and focused learning skills."
+description: "Scooly is an AI learning assistant built by Alvaro Patru (Alvaro P100). It explains homework, adapts to school context, and supports images, mathematics, and focused learning skills."
 role: "Product development"
 status: "Prototype"
 year: "2026"

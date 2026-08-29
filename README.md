@@ -1,13 +1,13 @@
 # alvarop100.github.io
 
-The source for the personal website and project portfolio of Alvaro Petro, also known online as Alvaro P100.
+The source for the personal website and project portfolio of Alvaro Patru, also known online as Alvaro P100.
 
 The site is built with Jekyll and hosted free on GitHub Pages. It includes:
 
 - A homepage, biography, project index, and detailed project case studies
 - Search metadata, canonical URLs, Open Graph cards, and an XML sitemap
 - `ProfilePage`, `Person`, and `CreativeWork` structured data
-- A canonical identity connection between Alvaro Petro, Alvaro P100, GitHub, and YouTube
+- A canonical identity connection between Alvaro Patru, Alvaro P100, GitHub, and YouTube
 - Responsive light and dark themes
 - No analytics, advertising, or paid hosting dependency
 
