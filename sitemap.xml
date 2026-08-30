@@ -5,19 +5,10 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for item in site.pages %}
-    {% unless item.sitemap == false or item.noindex %}
   <url>
-    <loc>{{ item.url | absolute_url }}</loc>
+    <loc>{{ "/" | absolute_url }}</loc>
   </url>
-    {% endunless %}
-  {% endfor %}
-  {% for project in site.projects %}
-    {% unless project.sitemap == false or project.noindex %}
   <url>
-    <loc>{{ project.url | absolute_url }}</loc>
+    <loc>{{ "/about/" | absolute_url }}</loc>
   </url>
-    {% endunless %}
-  {% endfor %}
 </urlset>
-
