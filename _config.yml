@@ -1,5 +1,5 @@
 title: "Alvaro Patru / Alvaro P100"
-description: "The personal website and project portfolio of Alvaro Patru, also known online as Alvaro P100."
+description: "The personal website of Alvaro Patru, also known online as Alvaro P100, focused on software, infrastructure, data, security, automation, and AI."
 url: "https://alvarop100.github.io"
 baseurl: ""
 lang: "en"
@@ -24,6 +24,8 @@ defaults:
       type: projects
     values:
       layout: project
+      noindex: true
+      sitemap: false
 
 exclude:
   - Gemfile
