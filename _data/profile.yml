@@ -19,7 +19,7 @@ projects_description: "Explore software projects by Alvaro Patru (Alvaro P100), 
 bio: "I am Alvaro Patru, known online as Alvaro P100. I build and maintain practical systems across software development, IT and server infrastructure, data management, cybersecurity, workflow automation, and AI integration."
 email: ""
 default_image: "/assets/images/workspace-hero.jpg"
-profile_modified: "2026-08-30T23:46:08+02:00"
+profile_modified: "2026-08-30T23:54:54+02:00"
 
 knows_about:
   - "Software development"
@@ -39,7 +39,7 @@ socials:
   - name: "GitHub"
     url: "https://github.com/AlvaroP100"
   - name: "LinkedIn"
-    url: "https://www.linkedin.com/in/alvaro-patru-203a8637a/"
+    url: "https://www.linkedin.com/in/alvaro-patru/"
   - name: "YouTube"
     url: "https://www.youtube.com/@AlvaroP100"
     same_as: "https://www.youtube.com/channel/UC6fZeCEEkKOvaAVZpjqXGCg"
