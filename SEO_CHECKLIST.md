@@ -19,7 +19,7 @@
 2. Submit `https://alvarop100.github.io/sitemap.xml` in the Sitemaps report.
 3. Use URL Inspection for the homepage and About page. Request indexing for each.
 4. Change the YouTube display name to `Alvaro Patru | Alvaro P100` and add `https://alvarop100.github.io/` to the channel links and About text.
-5. Set the GitHub account name to `Alvaro Patru`, keep `AlvaroP100` as the username, add the website URL, and mention `Alvaro P100` in the bio.
+5. Set the GitHub account name to `Alvaro Patru`, keep `@AlvaroP100` as the username, add the website URL, and mention `Alvaro P100` in the bio.
 6. Put `Alvaro Patru (Alvaro P100)` in the LinkedIn headline or About section and link back to the website. Use the exact LinkedIn profile URL in the website `sameAs` list only after it is confirmed.
 7. Use the same spelling and profile image across public accounts. Do not create duplicate or empty profiles.
 8. Keep public descriptions capability-focused until individual project pages are ready for indexing.
