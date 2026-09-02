@@ -17,5 +17,39 @@
   </head>
   <body class="bg-[#0A0A0B] text-[#E4E4E7] antialiased selection:bg-[#3F3F46] selection:text-white">
     <div id="root"></div>
+    <script>
+      (() => {
+        const scrollToCurrentSection = () => {
+          const id = decodeURIComponent(window.location.hash.slice(1));
+
+          if (!id) return true;
+
+          const target = document.getElementById(id);
+
+          if (!target) return false;
+
+          window.history.replaceState(
+            null,
+            "",
+            `${window.location.pathname}${window.location.search}`,
+          );
+          window.location.hash = id;
+          return true;
+        };
+
+        window.addEventListener("load", () => {
+          if (scrollToCurrentSection()) return;
+
+          const observer = new MutationObserver(() => {
+            if (scrollToCurrentSection()) observer.disconnect();
+          });
+
+          observer.observe(document.getElementById("root"), {
+            childList: true,
+            subtree: true,
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
