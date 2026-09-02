@@ -1,8 +1,6 @@
-_site/
-.jekyll-cache/
-.sass-cache/
-Gemfile.lock
 .bundle/
+Gemfile.lock
+Hoser-website-Ui-Ux/
+_site/
 work/
-outputs/
-.DS_Store
+assets/aistudio/
