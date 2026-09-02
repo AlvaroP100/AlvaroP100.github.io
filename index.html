@@ -9,6 +9,30 @@
     <meta property="og:description" content="Developer portfolio and security lab showcase for Alvaro Patru (AlvaroP100), featuring full-stack architecture, cryptography tools, and zero-trust engineering." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
+      }
+
+      if (window.location.hash) {
+        window.history.replaceState(
+          null,
+          "",
+          `${window.location.pathname}${window.location.search}`,
+        );
+      }
+
+      const resetScrollPosition = () => {
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scrollTo(0, 0);
+        window.requestAnimationFrame(() => {
+          document.documentElement.style.removeProperty("scroll-behavior");
+        });
+      };
+
+      window.addEventListener("load", resetScrollPosition);
+      window.addEventListener("pageshow", resetScrollPosition);
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -17,39 +41,5 @@
   </head>
   <body class="bg-[#0A0A0B] text-[#E4E4E7] antialiased selection:bg-[#3F3F46] selection:text-white">
     <div id="root"></div>
-    <script>
-      (() => {
-        const scrollToCurrentSection = () => {
-          const id = decodeURIComponent(window.location.hash.slice(1));
-
-          if (!id) return true;
-
-          const target = document.getElementById(id);
-
-          if (!target) return false;
-
-          window.history.replaceState(
-            null,
-            "",
-            `${window.location.pathname}${window.location.search}`,
-          );
-          window.location.hash = id;
-          return true;
-        };
-
-        window.addEventListener("load", () => {
-          if (scrollToCurrentSection()) return;
-
-          const observer = new MutationObserver(() => {
-            if (scrollToCurrentSection()) observer.disconnect();
-          });
-
-          observer.observe(document.getElementById("root"), {
-            childList: true,
-            subtree: true,
-          });
-        });
-      })();
-    </script>
   </body>
 </html>
